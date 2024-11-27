@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <title>Arasu Candidate Data Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>  
+  <div class="wrapper">
+      <section class="profile-sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <div class="titel-part">
+                  <img src="assets/logo.png" alt="">
+                  <h2>Candidate Personal Detailes</h2>
+                  <p>Welcome to our modern tabbed interface! Enjoy smooth transitions, vibrant gradients, and responsive design.
+                    Whether you’re browsing on mobile or desktop, everything adapts seamlessly.</p>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <div class="tabs-container">
+              <div class="tabs">
+                <div class="tab-links">
+                  <button class="tab-link active" data-tab="tab-1"><i class="fas fa-info-circle  mx-1"></i> Overview</button>
+                  <button class="tab-link" data-tab="tab-2"><i class="fa fa-asterisk mx-1"></i> Candidate Basic Info</button>
+                  <button class="tab-link" data-tab="tab-3"><i class="fas fa-list  mx-1"></i>Candidate Contact Info</button>
+                  <button class="tab-link" data-tab="tab-4"><i class="fa fa-id-badge" ></i> Candidate Primary Info</button>
+                  <button class="tab-link" data-tab="tab-5"><i class="fa fa-window-restore"></i> Candidate Experience Info</button>
+                  <button class="tab-link" data-tab="tab-6"><i class="fa fa-check-circle"></i> Declaration</button>
+                </div>
+          
+                <div class="tab-content active" id="tab-1">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3>Over View</h3>
+                      <label for="important">* Kindly read the all contents clearly after that proceed it</label>
+                    </div>
+                  </div>
+                  <p><i class="fa fa-check mx-1 fs-0"></i>Welcome to our modern tabbed interface! Enjoy smooth transitions, vibrant gradients, and responsive design.</p>
+                  <p><i class="fa fa-check mx-1 fs-0"></i>Whether you’re browsing on mobile or desktop, everything adapts seamlessly.</p>
+                  <button class="cta-btn">Processed</button>
+                </div>
+          
+                <div class="tab-content" id="tab-2">
+                  <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                          <div id="content">    
+                            <form  class="from-data">
+                              <h3>Candidate Basic Details</h3>
+      
+                              <div class="row" >
+                                <div class="col-md-3 col-xs-3">
+                                    <label>Respectation</label>
+                                  <div class="d-flex justify-content-start align-items-center my-2">
+                                    <select name="notation" id="notation" >
+                                      <option value="#">Choose</option>
+                                        <option value="mr">Mr</option>
+                                        <option value="mr">Miss</option>
+                                        <option value="Mirs">Mis</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-9 col-xs-9">
+                                    <label>Candidate Full Name</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case" ><i class="fa fa-male"></i></span>
+                                    <input type="text" name="lname" id="lname" placeholder="Enter your Full Name" required>
+                                    </div>
+                                    <div id="suggesstion-box"> </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Resume Url</label>       
+                                      <input type="text" name="resume" id="resume" placeholder="Enter your profile link" required>  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Resume)</label>
+                                    <input type="file" name="resume" id="resume">
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="row">
+                                <div class="col-md-12 col-xs-12 d-flex justify-content-start align-items-center">
+                                    <div class="radio-select d-flex justify-content-center align-items-center my-2">
+                                        <input type="radio" name="work" id="fresher">
+                                        <label for="fresher">Freshers</label>
+                                    </div>
+                                    <div class="radio-select d-flex justify-content-center align-items-center my-2">
+                                      <input type="radio" name="work" id="experience">
+                                      <label for="experience">Experience</label>
+                                  </div>
+                                </div>
+                              </div>
+      
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <button class="btn-back" name="Add" value="Add">Back</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                      <button class="btn-save" name="Add" value="Add">Save</button>
+                                  </div>
+                                  <div class="col-md-4"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+          
+                <div class="tab-content" id="tab-3">
+                  <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                          <div id="content">    
+                            <form  class="from-data">
+                              <h3>Address Details</h3>
+                              <div class="row" >
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Candidate First Name</label>
+                                  <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case" ><i class="fa fa-user"></i></span></span> 
+                                    <input type="text" name="fname" id="fname" class="new-select" placeholder="First Name" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Candidate Last Name</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case" ><i class="fa fa-user"></i></span>
+                                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                                    </div>
+                                    <div id="suggesstion-box"> </div>
+      
+                                </div>
+                              </div>
+                
+                              <div class="row" >
+                                  <div class="col-md-6 col-xs-6">
+                                      <label>Candidate Father Name</label>
+                                      <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case"><i class="fa fa-user"></i></span>
+                                     <input type="text" name="fathername" id="fathername" placeholder="Father Name" required>
+                                     </div>
+                                  </div>
+                                  <div class="col-md-6 col-xs-6">
+                                      <label>Candidate Mother Name</label>
+                                      <div class="d-flex justify-content-start align-items-center my-2">
+                                      <span class="icon-case"><i class="fa fa-user"></i></span>
+                                      <input type="text" name="mothername" id="mothername"placeholder="Mother Name" required >
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="row" >
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Email Id</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                  <span class="icon-case"><i class="fa fa-envelope"></i></span> 
+                                  <input type="email" name="email" id="email"placeholder="Email Id" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <label>Primary Mobile Number</label>
+                                  <div class="d-flex justify-content-start align-items-center my-2">
+                                <span class="icon-case"><i class="fa fa-phone"></i></span> 
+                                <input type="tel" name="mobileno" id="mobileno"placeholder="Contact Number" required>
+                                </div>
+                                </div>
+                              </div>
+      
+                              <div class="row" >
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Aternative Mobile Number</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                  <span class="icon-case"><i class="fa fa-phone"></i></span> 
+                                  <input type="tel" name="mobileno" id="mobileno"placeholder="Alternate contact number" required>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6 col-xs-6">
+                                    <label>Gender</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case"><i class="fa fa-address-card"></i></span>
+                                    <select name="notation" id="notation" >
+                                      <option value="#">Choose</option>
+                                        <option value="mr">Male</option>
+                                        <option value="mr">Female</option>
+                                        <option value="Mirs">Others</option>
+                                    </select>
+                                    </div>
+                                </div>
+                              </div>
+                
+                              <div class="row" >
+                                  <div class="col-md-6 col-xs-6">
+                                      <label>Date of Birth</label>
+                                      <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case"><i class="fa fa-calendar"></i></span> 
+                                    <input type="date" name="dob" id="dob"placeholder="Date Of Birth" required>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-xs-6">
+                                    <label>Age</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" name="age" id="age"placeholder="correct Age" required>
+                                    </div>
+                                  </div>
+                              </div>
+    
+                              <div class="row" >
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Marital Status</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                  <span class="icon-case"><i class="fa fa-envelope"></i></span> 
+                                  <input type="text" name="marrigests" id="marrigests"placeholder="Marited or not" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                    <label>Blood Group</label>
+                                    <div class="d-flex justify-content-start align-items-center my-2">
+                                    <span class="icon-case"><i class="fa fa-address-card"></i></span>
+                                    <input type="text" name="bloodgrp " id="bloodgrp"placeholder="Blood Group" required>
+                                    </div>
+                                </div>
+                              </div>
+                
+                              <div class="row">
+                                  <div class="col-md-6 col-xs-6">
+                                      <label>Current Address</label>
+                                    <textarea name="currentadd" id="currentadd" cols="10" rows="10"placeholder="Current Address" required></textarea>    
+                                  </div>
+                                  <div class="col-md-6 col-xs-6">
+                                    <label>Permenent Address</label>
+                                    <textarea name="permenentadd" id="permenentadd" cols="10" rows="10"placeholder="Permenent Address" required></textarea>
+                                  </div>
+                              </div>
+                                         
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <button class="btn-back" name="Add" value="Add">Back</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                      <button class="btn-save" name="Add" value="Add">Save</button>
+                                  </div>
+                                  <div class="col-md-4"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+          
+                <div class="tab-content" id="tab-4">
+                  <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                          <div id="content">    
+                            <form  class="from-data">   
+                              <h3>Primary Information</h3>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Aadhaar Number</label>       
+                                      <input type="number" name="aadharno" id="aadharno">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Aahdhaar)</label>
+                                    <input type="file" name="aadharno" id="aadharno">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Pan Number</label>       
+                                      <input type="text" name="pannno" id="pannno">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Pan Card)</label>
+                                    <input type="file" name="pannno" id="pannno">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Account Number</label>       
+                                      <input type="text" name="accnumber" id="accnumber">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Bank Passbook)</label>
+                                    <input type="file"  name="accpassbook" id="accpassbook">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Post Graduate</label>       
+                                      <input type="text" name="pgcertificate" id="pgcertificate">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (PG Certificate)</label>
+                                    <input type="file" name="pgcertificate" id="pgcertificate">
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Under Graduate</label>       
+                                      <input type="text" name="ugcertificate" id="ugcertificate">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (UG Certificate)</label>
+                                    <input type="file" name="ugcertificate" id="ugcertificate">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>12th Markes</label>       
+                                      <input type="text" name="12thcertificate" id="12thcertificate">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (12th Certificate)</label>
+                                    <input type="file" name="12thcertificate" id="12thcertificate">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>10th Markes</label>       
+                                      <input type="text" name="10thcertificate" id="10thcertificate">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (10th Certificate)</label>
+                                    <input type="file" name="10thcertificate" id="10thcertificate">
+                                  </div>
+                                </div>
+                              </div>
+      
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <button class="btn-back" name="Add" value="Add">Back</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                      <button class="btn-save" name="Add" value="Add">Save</button>
+                                  </div>
+                                  <div class="col-md-4"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+
+                <div class="tab-content" id="tab-5">
+                  <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                          <div id="content">    
+                            <form  class="from-data">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <h3>Wisdom Details</h3>
+                                  <label for="important">* Experience Candidate must fill below three Fields</label>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Experience</label>       
+                                      <input type="text" name="experience" id="experience" placeholder="Area of service">  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Experience)</label>
+                                    <input type="file" name="experience" id="experience">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Pay Slip</label>       
+                                      <input type="text" name="paycertificate" id="paycertificate" placeholder="Mention Salary details" required>  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (pay slip last 3months)</label>
+                                    <input type="file" multiple name="paycertificate" id="paycertificate">
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div class="my-2">
+                                      <label>Account Statements</label>       
+                                      <input type="text" name="accstatemets" id="accstatemets" placeholder="Mention Months of statements" required>  
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                  <div class="my-2 field">
+                                    <label>Attach File (Account statements)</label>
+                                    <input type="file" multiple name="accstatemets" id="accstatemets">
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <h3>Working Organization Details</h3>
+                                    <label for="important">* Experience Candidate must fill below Fields</label>
+                                  </div>
+                                </div>
+      
+                                <div class="widomhero">
+                                  <div class="row my-3">
+                                    <div class="col-md-9">
+                                      <input type="text" id="task" placeholder="Enter your organization & work Details" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <button id="add-task">Add company</button>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                        <ul id="task-list"></ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                
+      
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <button class="btn-back" name="Add" value="Add">Back</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                      <button class="btn-save" name="Add" value="Add">Save</button>
+                                  </div>
+                                  <div class="col-md-4"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+
+                <div class="tab-content" id="tab-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3>Final Review</h3>
+                      <label for="important">* Kindly read the all contents clearly after that proceed it</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><i class="fa fa-check mx-1 fs-0"></i>Welcome to our modern tabbed interface! Enjoy smooth transitions, vibrant gradients, and responsive design.</p>
+                      <p><i class="fa fa-check mx-1 fs-0"></i>Whether you’re browsing on mobile or desktop, everything adapts seamlessly.</p>
+                      <p><i class="fa fa-check mx-1 fs-0"></i>Welcome to our modern tabbed interface! Enjoy smooth transitions, vibrant gradients, and responsive design.</p>
+                      <p><i class="fa fa-check mx-1 fs-0"></i>Whether you’re browsing on mobile or desktop, everything adapts seamlessly.</p>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <div class="check-select d-flex justify-content-start align-items-center my-2">
+                          <label for="declare"><i class="fa fa-handshake mx-1 fs-0"></i> Before Are you working in aspv and arasu group company?</label>
+                          <input type="checkbox" name="checkyes" id="yes" class="mx-2" required><label>Yes</label>
+                          <input type="checkbox" name="checno" id="no" class="mx-2" required><label>No</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                      <div class="check-select d-flex justify-content-start align-items-center my-2">
+                        <label for="declare"><i class="fa fa-handshake mx-1 fs-0"></i> Before Are you working in aspv and arasu group company?</label>
+                        <input type="checkbox" name="checkyes" id="yes" class="mx-2" required><label>Yes</label>
+                        <input type="checkbox" name="checno" id="no" class="mx-2" required><label>No</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                      <div class="check-select d-flex justify-content-start align-items-center my-2">
+                        <label for="declare"><i class="fa fa-handshake mx-1 fs-0"></i> Before Are you working in aspv and arasu group company?</label>
+                        <input type="checkbox" name="checkyes" id="yes" class="mx-2" required><label>Yes</label>
+                        <input type="checkbox" name="checno" id="no" class="mx-2" required><label>No</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                      <div class="check-select d-flex justify-content-start align-items-center my-2">
+                        <label for="declare"><i class="fa fa-handshake mx-1 fs-0"></i> Before Are you working in aspv and arasu group company?</label>
+                        <input type="checkbox" name="checkyes" id="yes" class="mx-2" required><label>Yes</label>
+                        <input type="checkbox" name="checno" id="no" class="mx-2" required><label>No</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                      <div class="check-select d-flex justify-content-start align-items-center my-2">
+                        <label for="declare"><i class="fa fa-handshake mx-1 fs-0"></i> Before Are you working in aspv and arasu group company?</label>
+                        <input type="checkbox" name="checkyes" id="yes" class="mx-2" required><label>Yes</label>
+                        <input type="checkbox" name="checno" id="no" class="mx-2" required><label>No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="cta-btn">Submit</button>
+                </div>
+
+              </div>
+            </div>
+
+
+
+<!-- 
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                    <div id="content">    
+                      <form  class="from-data">
+                        <h3>Candidate Details</h3>
+
+                        <div class="row" >
+                          <div class="col-md-3 col-xs-3">
+                              <label>choose</label>
+                            <div class="d-flex justify-content-start align-items-center my-2">
+                              <select name="notation" id="notation" >
+                                <option value="#">Choose</option>
+                                  <option value="mr">Mr</option>
+                                  <option value="mr">Miss</option>
+                                  <option value="Mirs">Mis</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-9 col-xs-9">
+                              <label>Candidate Full Name</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case" ><i class="fa fa-male"></i></span>
+                              <input type="text" name="lname" id="lname">
+                              </div>
+                              <div id="suggesstion-box"> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Resume Url</label>       
+                                <input type="text" name="resume" id="resume">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Resume)</label>
+                              <input type="file" name="resume" id="resume">
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="col-md-12 col-xs-12 d-flex justify-content-start align-items-center">
+                              <div class="radio-select d-flex justify-content-center align-items-center my-2">
+                                  <input type="radio" name="work" id="fresher">
+                                  <label for="fresher">Freshers</label>
+                              </div>
+                              <div class="radio-select d-flex justify-content-center align-items-center my-2">
+                                <input type="radio" name="work" id="experience">
+                                <label for="experience">Experience</label>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <h3>Address Details</h3>
+                        <div class="row" >
+                          <div class="col-md-6 col-xs-6">
+                              <label>Candidate First Name</label>
+                            <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case" ><i class="fa fa-male"></i></span></span> 
+                              <input type="text" name="fname" id="fname" class="new-select">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                              <label>Candidate Last Name</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case" ><i class="fa fa-male"></i></span>
+                              <input type="text" name="lname" id="lname">
+                              </div>
+                              <div id="suggesstion-box"> </div>
+
+                          </div>
+                        </div>
+          
+                        <div class="row" >
+                            <div class="col-md-6 col-xs-6">
+                                <label>Candidate Father Name</label>
+                                <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case"><i class="fa fa-male"></i></span>
+                               <input type="text" name="fathername" id="fathername">
+                               </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <label>Candidate Mother Name</label>
+                                <div class="d-flex justify-content-start align-items-center my-2">
+                                <span class="icon-case"><i class="fa fa-female"></i></span>
+                                <input type="text" name="mothername" id="mothername">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" >
+                          <div class="col-md-6 col-xs-6">
+                              <label>Email Id</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                            <span class="icon-case"><i class="fa fa-calendar"></i></span> 
+                            <input type="email" name="email" id="email">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <label>Primary Mobile Number</label>
+                            <div class="d-flex justify-content-start align-items-center my-2">
+                          <span class="icon-case"><i class="fa fa-calendar"></i></span> 
+                          <input type="tel" name="mobileno" id="mobileno">
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="row" >
+                          <div class="col-md-6 col-xs-6">
+                              <label>Aternative Mobile Number</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                            <span class="icon-case"><i class="fa fa-calendar"></i></span> 
+                            <input type="tel" name="mobileno" id="mobileno">
+                            </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                              <label>Gender</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case"><i class="fa fa-mobile-phone"></i></span>
+                              <select name="notation" id="notation" >
+                                <option value="#">Choose</option>
+                                  <option value="mr">Male</option>
+                                  <option value="mr">Female</option>
+                                  <option value="Mirs">Others</option>
+                              </select>
+                              </div>
+                          </div>
+                        </div>
+          
+                        <div class="row" >
+                            <div class="col-md-6 col-xs-6">
+                                <label>Date of Birth</label>
+                                <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case"><i class="fa fa-calendar"></i></span> 
+                              <input type="date" name="dob" id="dob">
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                              <label>Age</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case"><i class="fa fa-mobile-phone"></i></span>
+                              <input type="text" name="age" id="age">
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row" >
+                          <div class="col-md-6 col-xs-6">
+                              <label>Marital Status</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                            <span class="icon-case"><i class="fa fa-envelope"></i></span> 
+                            <input type="text" name="marrigests" id="marrigests">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                              <label>Blood Group</label>
+                              <div class="d-flex justify-content-start align-items-center my-2">
+                              <span class="icon-case"><i class="fa fa-mobile-phone"></i></span>
+                              <input type="text" name="bloodgrp " id="bloodgrp">
+                              </div>
+                          </div>
+                        </div>
+          
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <label>Current Address</label>
+                              <textarea name="currentadd" id="currentadd" cols="10" rows="10"></textarea>    
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                              <label>Permenent Address</label>
+                              <textarea name="permenentadd" id="permenentadd" cols="10" rows="10"></textarea>
+                            </div>
+                        </div>
+                                  
+                                  
+                        <h3>Primary Information</h3>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Aadhaar Number</label>       
+                                <input type="number" name="aadharno" id="aadharno">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Aahdhaar)</label>
+                              <input type="file" name="aadharno" id="aadharno">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Pan Number</label>       
+                                <input type="text" name="pannno" id="pannno">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Pan Card)</label>
+                              <input type="file" name="pannno" id="pannno">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Account Number</label>       
+                                <input type="text" name="accnumber" id="accnumber">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Bank Passbook)</label>
+                              <input type="file"  name="accpassbook" id="accpassbook">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Post Graduate</label>       
+                                <input type="text" name="pgcertificate" id="pgcertificate">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (PG Certificate)</label>
+                              <input type="file" name="pgcertificate" id="pgcertificate">
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Under Graduate</label>       
+                                <input type="text" name="ugcertificate" id="ugcertificate">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (UG Certificate)</label>
+                              <input type="file" name="ugcertificate" id="ugcertificate">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>12th Markes</label>       
+                                <input type="text" name="12thcertificate" id="12thcertificate">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (12th Certificate)</label>
+                              <input type="file" name="12thcertificate" id="12thcertificate">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>10th Markes</label>       
+                                <input type="text" name="10thcertificate" id="10thcertificate">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (10th Certificate)</label>
+                              <input type="file" name="10thcertificate" id="10thcertificate">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h3>Wisdom Details</h3>
+                            <label for="important">* Experience Candidate must fill below three Fields</label>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Experience</label>       
+                                <input type="text" name="experience" id="experience">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Experience)</label>
+                              <input type="file" name="experience" id="experience">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Pay Slip</label>       
+                                <input type="text" name="paycertificate" id="paycertificate">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (pay slip last 3months)</label>
+                              <input type="file" multiple name="paycertificate" id="paycertificate">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 col-xs-6">
+                              <div class="my-2">
+                                <label>Account Statements</label>       
+                                <input type="text" name="accstatemets" id="accstatemets">  
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-xs-6">
+                            <div class="my-2 field">
+                              <label>Attach File (Account statements)</label>
+                              <input type="file" multiple name="accstatemets" id="accstatemets">
+                            </div>
+                          </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h3>Working Organization Details</h3>
+                              <label for="important">* Experience Candidate must fill below Fields</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="widomhero">
+                                <div class="row my-3">
+                                    <div class="col-md-9">
+                                      <input type="text" id="task" placeholder="Enter your organization & work Details" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <button id="add-task">Add company</button>
+                                    </div>
+                                </div>
+                                <ul id="task-list"></ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+
+                          <div class="row">
+                              <div class="col-md-4 text-center">
+                                  <button class="btn-back" name="Add" value="Add">Back</button>
+                              </div>
+                              <div class="col-md-4 text-center">
+                                <button class="btn-save" name="Add" value="Add">Save</button>
+                            </div>
+                            <div class="col-md-4"></div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div> -->
+          </div>
+      </section>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/exp.js"></script>
+  <script src="js/all.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+</body>
+</html>
+
